@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Speech Recognition by G. Dorzilmé</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Biryani:wght@400;700&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/index.css') }}"/>
+
+</head>
+<body>
+  <div id="speechContainer">
+    <h1>Upload a New File</h1>
+      <h4><i>Please upload an audio file in WAV format.</i></h4>
+      <form method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".wav">
+        <br>
+        <input type="submit" id="submitButton" value="Transcribe" />
+      </form>
+
+      {% if transcript != "" %}
+      <div id="speechTranscriptContainer">
+          <h1>Transcript</h1>
+          <p id="speechText">{{transcript}}</p>
+      </div>
+      {% endif %}
+
+  </div>
+</body>
+</html>

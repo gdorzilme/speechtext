@@ -1,0 +1,46 @@
+h1, h4, p, input {
+    font-family: 'Biryani', sans-serif;
+
+}
+
+body {
+    font-family: 'Biryani', sans-serif;
+    background-color: linear-gradient(180deg, lightblue, navy, whitesmoke);
+    font-size: 14px;
+    font-weight: normal; 
+    
+}
+
+#speechContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    margin: 20px;
+   
+
+}
+
+#submitButton {
+    background-color: rgb(55, 158, 199);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 30px;
+    margin-top: 20px;
+
+}
+
+#submitButton:hover {
+    cursor: pointer;
+}
+
+#speechTranscriptContainer {
+    margin-top: 20px;
+
+}
+
+#speechText {
+    font-size: 14px;
+    width: 500px;
+} 
